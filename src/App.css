@@ -1,0 +1,142 @@
+#app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#app .inpBtn {
+  display: flex;
+  align-items: center;
+}
+#app input {
+  height: 35px;
+  font-size: 1em;
+  width: 300px;
+  padding: 0 10px;
+  border: 1px solid silver;
+  outline: none;
+}
+#app button {
+  margin: 0 10px;
+  height: 37px;
+  width: 37px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app button img {
+  width: 100%;
+}
+#app .links {
+  margin: 30px 0 0 0;
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#app .links div {
+  cursor: pointer;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+}
+#app .output {
+  margin: 60px 0 0 0;
+}
+#app .output .item {
+  margin: 15px 0;
+  border: 2px solid silver;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  margin: 20px 0 0 0;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 400px !important;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  margin: 0 0 0 -15px;
+}
+.upload-btn-wrapper .btnUpload {
+  min-width: 35px;
+  min-height: 35px;
+}
+.sidebar {
+  /* position: absolute; */
+  right: 5%;
+  height: 90vh;
+  border: 2px solid silver;
+  min-width: 20%;
+  padding: 0 20px;
+  max-width: 500px;
+  overflow: scroll;
+}
+.sidebar .percent {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 2px solid silver;
+}
+.sidebar .percent div span {
+  font-size: 14px !important;
+  font-weight: normal !important;
+  display: block;
+  margin: 10px 0;
+}
+.sidebar .logsWrap {
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.sidebar .logsWrap span {
+  margin: 5px 0;
+  color: green;
+}
+.sidebar .logsWrap div {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.sidebar .logsWrap:nth-child(2) {
+  border-bottom: 2px solid silver;
+  padding: 10px 0;
+}
+.sidebar .logsWrap:nth-child(3) {
+  border-bottom: 2px solid silver;
+  padding: 10px 0;
+}
+.sidebar .latest span {
+  color: gray;
+}
